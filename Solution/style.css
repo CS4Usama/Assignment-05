@@ -1,0 +1,146 @@
+body
+    {
+        margin: 40px 0 0 50px;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+nav.container>ul>li>a
+    {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        border-left: 1px solid rgb(104, 104, 104);
+        background-color: rgb(51, 51, 51);
+        color: #ffffff;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+nav.container>ul>li>a:hover
+    {
+        background-color: red;
+    }
+
+nav.container ul
+    {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+nav.container li
+    {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+nav.container li:hover .dropdown-1>li
+    {
+        display: block;
+        top: 0px;
+    }
+
+
+.dropdown-1 li
+    {
+        display: none;
+        position: relative;
+        top: 0px;
+    }
+
+ul.dropdown-1
+    {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+    }
+
+.dropdown-1>li>a, .dropdown-2>li>a, .dropdown-3>li>a
+    {
+        padding: 10px 0 10px 20px;
+        display: block;
+        border-bottom: 2px solid rgb(200, 200, 200);
+        /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3); */
+        background-color: rgb(220, 220, 220);
+        color: #000000;
+        font-size: 1.3em;
+        font-weight: bold;
+        text-align: left;
+        text-decoration: none;
+    }
+
+.dropdown-1>li>a:hover, .dropdown-2>li>a:hover, .dropdown-3>li>a:hover
+    {
+        background-color: rgb(200, 200, 200);
+    }
+
+.dropdown-1 li:hover .dropdown-2 li
+    {
+        display: block;
+        top: 0;
+    }
+
+.dropdown-2 li
+    {
+        display: none;
+        position: relative;
+    }
+
+.dropdown-2
+    {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+    }
+
+.dropdown-2 li:hover .dropdown-3 li
+    {
+        display: block !important;
+    }
+
+.dropdown-1 li:hover .dropdown-3 li, .dropdown-3 li
+    {
+        display: none;
+    }
+
+.dropdown-3
+    {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+    }
+
+.arrow
+    {
+        margin-left: 8px;
+        font-size: 12px;
+        color: #eeeeee;
+    }
+
+.arrow-2
+    {
+        margin-left: 2px;
+        font-size: 12px;
+        color: gray;
+    }
+
+.arrow-3
+    {
+        margin-left: 50px;
+        font-size: 12px;
+        color: gray;
+    }
